@@ -27,4 +27,5 @@ jobs:
         pip install --upgrade wheel
     - name: Create yara-python with dex enabled
       run: |
+        ls
         pip wheel --wheel-dir=yara-python --build-option="build" --build-option="--enable-dex"
