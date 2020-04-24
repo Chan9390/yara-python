@@ -27,7 +27,7 @@ jobs:
         pip install --upgrade wheel
     - name: Create yara-python with dex enabled
       run: |
-        ls
-        git submodule init
+        sudo apt-get update
+        sudo apt-get install -y libyara-dev
         ls
         python setup.py build --dynamic-linking
