@@ -27,5 +27,7 @@ jobs:
         pip install --upgrade wheel
     - name: Create yara-python with dex enabled
       run: |
-        git log
+        ls
+        git submodule init
+        ls
         python setup.py build --dynamic-linking
